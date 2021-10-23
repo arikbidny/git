@@ -3,6 +3,9 @@
 ## Content
 
 - [Configuration](#configuration)
+- [Making changes to your files](#making-changes-to-your-files)
+- [Going back to a previous commit version](#going-back-to-a-previous-commit-version)
+- [Working with branches](#working-with-branches)
 
 ## Configuration
 
@@ -56,3 +59,17 @@ git commit -m "initial commit"
 ```
 git diff
 ```
+
+## Going back to a previous commit version
+
+- Get back to previous commit
+
+```
+git checkout commitId
+```
+
+## Working with branches
+
+- Good Practices
+  - Create many short-lived feature branches
+  - Delete the branches once they are not required
