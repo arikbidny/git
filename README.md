@@ -148,3 +148,31 @@ git checkout new-feature
 touch .gitignore
 ```
 - Add files you want to ignore to gitignore
+
+
+## GitFlow
+[Documentation](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+- This is just a workflow that is designed for large projects
+- This workflow is just built on top of git and just defines the way branches are defined and how they interact with each other
+  - Master Branch - This records the release history
+  - Develop Branch - This is used as an integration branch for features 
+  - Feature Branch - Created of the Develop branch and then merged later on with the Develop branch 
+  - Release Branch - Similar as Master branch 
+- You can download extra tool git-flow 
+  - This tool can be used in addition to your normal git commands for your repository 
+  - It can be maintain your branches 
+  - When using the git-flow extension libary, executing ```git flow init``` on existing repo will create the develop branch
+
+## Fork
+- A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+- Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea. You can fork a repository to create a copy of the repository and make changes without affecting the upstream repository. 
+
+## Git Credentials 
+
+- When accessing git repos via HTTPS, you need to enter credentials which consists of your username and password.
+- If you don't want to enter your username and password every time you work with git repos, you can use the git credential system.
+- The git credentials system has a cache mechanism that can be used to cache your credentials.
+- There are different settings when it comes to the cache. 
+- The default settings is not to cache anything at all. 
+- The next cache settings is to keep the credentials in memory for a certain period of time.
+- You can also define a setting to save the credentials in a plain-text file on disk.
