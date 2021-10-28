@@ -6,6 +6,15 @@
 - [Making changes to your files](#making-changes-to-your-files)
 - [Going back to a previous commit version](#going-back-to-a-previous-commit-version)
 - [Working with branches](#working-with-branches)
+- [Merges in git](#merges-in-git)
+- [Push changes to central repository](#push-changes-to-central-repository)
+- [Pull requests](#pull-requests)
+- [Gitignore](#gitignore)
+- [GitFlow](#gitFlow)
+- [Fork](#fork)
+- [Git Credentials ](#git-credentials )
+- [More git commands](#more-git-commands)
+
 
 ## Configuration
 
@@ -120,7 +129,7 @@ git merge --squash feature
 ```
 
 
-## Push changes to central 
+## Push changes to central repository
 
 - Push from all branches 
 ```
@@ -176,3 +185,16 @@ touch .gitignore
 - The default settings is not to cache anything at all. 
 - The next cache settings is to keep the credentials in memory for a certain period of time.
 - You can also define a setting to save the credentials in a plain-text file on disk.
+- When you are on Windows, you can use the Windows Credential Manager.
+- This provides a secure way of managing the credentials.
+- With Azure Repos, you can also use personal access tokens for authentication.
+
+## More git commands
+- Git gc command - This is a command that is used for maintenance purposes. The gc command is a garbage collection command and is used to clean up the git repository.
+
+- If you also use the --aggressive flag along with the command, it will also try to save more disk space after the completion.
+
+- Below is an example output from the command
+```
+git gc --aggressive
+```
